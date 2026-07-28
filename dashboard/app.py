@@ -243,6 +243,7 @@ elif page == "Forecasts":
                                       name="NFIS-II target (70%, 2025)"))
 
     fig.update_layout(title=f"{target}: 2025-2027 forecast", yaxis_title="%", height=500)
+    fig.update_xaxes(tickformat="d", dtick=1)
     st.plotly_chart(fig, width='stretch')
 
     st.subheader("Forecast table")
